@@ -82,10 +82,11 @@ if answer == 'y':
         else:
             break
 
-
-    if sum(my_cards) == sum(computer_cards) or (sum(my_cards) > 21 and sum(computer_cards) > 21):
+    my_sum = sum(my_cards)
+    comp_sup = sum(computer_cards)
+    if my_sum == comp_sup or (my_sum > 21 and comp_sup > 21):
         print(f"Tie (your cards: {my_cards}, " + f"computer's cards: {computer_cards})")
-    elif (sum(computer_cards) > 21 and sum(my_cards) <= 21) or (sum(my_cards) > sum(computer_cards) and sum(my_cards) <= 21):
+    elif (comp_sup > 21 and my_sum <= 21) or (my_sum > comp_sup and my_sum <= 21):
         print(f"You won!! (your cards: {my_cards}, " + f"computer's cards: {computer_cards})")
-    elif (sum(my_cards) > 21 and sum(computer_cards) <= 21) or (sum(computer_cards) > sum(my_cards) and sum(computer_cards) <= 21):
+    elif (my_sum > 21 and comp_sup <= 21) or (comp_sup > my_sum and comp_sup <= 21):
         print(f"You lost.. (your cards: {my_cards}, " + f"computer's cards: {computer_cards})")
