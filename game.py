@@ -49,9 +49,9 @@ answer = input()
 my_cards = []
 computer_cards = []
 if answer == 'y':
-  #  my_cards.append(random.choice(cards))
-  #  my_cards.append(random.choice(cards))
-    my_cards = ["A", "A"]
+    my_cards.append(random.choice(cards))
+    my_cards.append(random.choice(cards))
+  #  my_cards = ["A", "A"]
     computer_cards.append(random.choice(cards))
     computer_cards.append(random.choice(cards))
     for card in my_cards:
