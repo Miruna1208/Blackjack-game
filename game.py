@@ -61,9 +61,9 @@ if answer == 'y':
     print(f"Your cards: {my_cards}")
     print("Computer's card: " + computer_cards[0])
     
+    ask = True
     while(True):
         if sum(my_cards) < 21 and sum(computer_cards) < 21:
-            ask = True
             if ask:
                 print("Do you want to take one more card? (y/n)")
                 take = input()
